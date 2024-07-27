@@ -1,85 +1,107 @@
-/* style.css */
-
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  padding: 1em 0;
 }
 
 header .logo img {
-  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 1em;
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-  padding: 20px;
+  padding: 1em;
 }
 
 section {
-  margin-bottom: 20px;
+  margin: 2em 0;
+  padding: 1em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h1, section h2 {
-  color: #333;
+h1, h2 {
+  text-align: center;
+  color: #007BFF;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+ul li {
+  margin: 0.5em 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 form label {
-  margin: 10px 0 5px;
+  margin: 0.5em 0 0.2em;
+  font-weight: bold;
 }
 
-form input, form textarea {
-  padding: 10px;
-  margin-bottom: 10px;
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+  padding: 0.5em;
+  margin-bottom: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 form button {
-  background: #333;
-  color: #fff;
+  padding: 0.7em;
+  background-color: #007BFF;
+  color: white;
   border: none;
-  padding: 10px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 form button:hover {
-  background: #555;
+  background-color: #0056b3;
 }
 
 footer {
-  background: #333;
-  color: #fff;
+  background-color: #007BFF;
+  color: white;
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
+  padding: 1em 0;
+  position: relative;
   bottom: 0;
+  width: 100%;
 }
 
